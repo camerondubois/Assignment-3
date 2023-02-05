@@ -1,0 +1,10 @@
+1. (base) wireless78-178:pandas camidubois$ sed 's/Zoo//g' pandas.txt > nozoopandas.txt
+2. (base) wireless78-178:pandas camidubois$ sort -k2 pandas.txt | awk '{print$1,$4,$2}'> pandasnewcolumns.txt
+3. (base) wireless78-178:pandas camidubois$ awk '{print $5}' pandas.txt | sort>zoosaresorted.txt
+4. (base) wireless78-178:pandas camidubois$ sed "s/female/F/" pandas.txt | sed "s/male/M/">MandFpandas
+5. (base) MacBook-Air-2:pandas camidubois$ grep "female" pandas.txt | grep -c 'October'
+6. (base) MacBook-Air-2:pandas camidubois$ grep -n '^' pandas.txt > numberedpandas
+7. (base) MacBook-Air-2:pandas camidubois$ sed -n '1p;6p;17p' pandas.txt > pandas1617
+8. (base) MacBook-Air-2:pandas camidubois$ grep -i "x" pandas.txt > pandasx
+9. (base) MacBook-Air-2:pandas camidubois$ awk '{ a[$5]++ } END { for (b in a) { print b } }' pandas.txt > uniquelocations
+10. (base) MacBook-Air-2:pandas camidubois$ sort -k4 -n pandas.txt | awk '$4 <= 10' | awk '{print $1, $4}' > youngerthan10
